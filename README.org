@@ -1,0 +1,8 @@
+Requires praat-parselmouth (https://github.com/YannickJadoul/Parselmouth),
+and PRAAT (http://www.fon.hum.uva.nl/praat/).
+
+You can install praat-parselmouth using the following command
+#+begin_example
+pip install --user praat-parselmouth
+#+end_example
+
