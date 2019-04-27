@@ -31,7 +31,7 @@ def main(args):
     base = 147.
     #########################################
     sound = pm.Sound(path)
-    snd_part = sound.extract_part(from_time=15.,to_time=200., preserve_times=True)
+    snd_part = sound.extract_part(from_time=10.,to_time=35., preserve_times=True)
     pitches = snd_part.to_pitch()
     intensity = snd_part.to_intensity()
     inten = intensity.values.T
@@ -63,6 +63,7 @@ def main(args):
     ax.set_ylim([min(rel),max(rel)])
     ax.plot(cleaned[:,0],cleaned[:,1])
     ax.set_title(fname)
+    ax.set_ylabel('Hz')
     ax2 = ax.twinx()
     voi = []
     swarsequence = []

@@ -1,3 +1,6 @@
+#+CAPTIOM: Times 15-25 of Sakhi Mori in Raag Durga from https://www.youtube.com/watch?v=Dr11FJAJ-jI
+[[./data/sakhi_mori.png]]
+* Installation and requirements
 Requires praat-parselmouth (https://github.com/YannickJadoul/Parselmouth),
 and PRAAT (http://www.fon.hum.uva.nl/praat/).
 
@@ -6,3 +9,12 @@ You can install praat-parselmouth using the following command
 pip install --user praat-parselmouth
 #+end_example
 
+* Usage
+
+#+begin_src python
+python praat-exploration.py -p PATH/TO/SOUND/FILE
+#+end_src
+
+The base frequency is set to 147. Please change this to the 
+file specific base 'sa'. The easiest way is to eye ball where
+the 'sa' falls by looking at the left y axis.
